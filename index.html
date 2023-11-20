@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,5 +50,107 @@
       <p class="banner-text">Find in out shelf what you need for your development!</p>
       <input type="search" class="banner-search" placeholder="What is your next reading?">
     </section>
+    <section class="carousel">
+      <h2 class="carousel-title">Newest</h2>
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/ApacheKafka.svg" alt="Book about Apache Kafka and Spring Boot">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Lideranca.svg" alt="Book about leadership in design">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Javascript.svg" alt="Book about Javascript">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Guia Front-end.svg" alt="Front-end guide">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Portugol.svg" alt="Book about Portugol">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Acessibilidade.svg" alt="Book about acessibility">
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div> 
+      <div class="card">
+        <div class="card-description">
+          <div class="description">
+            <h3 class="description-title">You may like...</h3>
+            <h2 class="description-book-title">Angular 11 and Firebase</h2>
+            <p class="description-text">Building an application integrated with Google plataform</p>
+          </div>
+          <img src="img/Angular.svg" alt="Angular and Firebase book" class="description-image">
+        </div>
+        <div class="card-buttons">
+          <ul class="buttons">
+            <li class="buttons-item"><img src="img/Favoritos.svg" alt="Save book"></li>
+            <li class="buttons-item"><img src="img/Compras.svg" alt="Add to cart"></li>
+          </ul>
+          <a href="#" class="buttons-anchor">Know more</a>
+        </div>
+      </div>
+    </section>
+    <section class="carousel">
+      <h2 class="carousel-title">Best sellers</h2>
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/ApacheKafka.svg" alt="Book about Apache Kafka and Spring Boot">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Lideranca.svg" alt="Book about leadership in design">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Javascript.svg" alt="Book about Javascript">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Guia Front-end.svg" alt="Front-end guide">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Portugol.svg" alt="Book about Portugol">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Acessibilidade.svg" alt="Book about acessibility">
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div> 
+      <div class="card">
+        <div class="card-description">
+          <div class="description">
+            <img src="img/Estrelinhas.svg" alt="Stars">
+            <h3 class="description-title">Author of the month</h3>
+            <h2 class="description-author-name">Juliana Agarikov</h2>
+            <p class="description-text">Write and software analyst, Juliana is a front-end specialist.</p>
+          </div>
+          <img src="img/Escritora.svg" alt="Writer profile">
+        </div>
+        <div class="card-buttons">
+          <ul class="buttons">
+            <li class="buttons-item"><img src="img/Favoritos.svg" alt="Save book"></li>
+            <li class="buttons-item"><img src="img/Compras.svg" alt="Add to cart"></li>
+          </ul>
+          <a href="#" class="buttons-anchor">Know more</a>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets"
+        }
+      });
+    </script>
   </body>
 </html>
