@@ -35,6 +35,14 @@
   display: block;
 }
 
+.container-menu-button:checked ~ .container-label > .header-menu {
+  background-image: url("../img/Menu Aberto.svg");
+}
+
+.container-menu-button:checked ~ .container-label {
+  background: var(--blue-gradient)
+}
+
 .list-menu-title, .list-menu-item {
   padding: 1em;
   background-color: var(--white);
