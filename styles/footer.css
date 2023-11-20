@@ -6,3 +6,50 @@ hr {
   background-color: var(--white);
   padding: 1em;
 }
+
+.footer-list {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-list {
+    display: block;
+  }
+
+  .footer-list-link {
+    text-decoration: none;
+    padding: 1em;
+    color: var(--gray);
+  }
+  
+  .footer-title, .footer-list-title {
+    padding: 1em 0;
+  }
+  
+  .footer-list-title {
+    color: var(--lightgray);
+    text-transform: uppercase;
+  }
+  
+  .footer-list-item {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+
+  .footer-list {
+    border-left: 1px solid var(--lightgray);
+    padding-left: 1em;
+  }
+
+  .footer {
+    padding: 3em 0;
+  }
+}
