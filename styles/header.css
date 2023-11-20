@@ -57,3 +57,47 @@
 .container-menu-button {
   display: none;
 }
+
+.container-title {
+  display: none;
+}
+
+.options {
+  display: none
+}
+
+@media screen and (min-width: 1024px) {
+
+  .container-title, .contanier-bold-title {
+    font-family: var(--secondary-font);
+    font-size: 30px;
+  }
+
+  .container-title {
+    font-weight: 400;
+    display: block;
+  }
+
+  .contanier-bold-title {
+    font-weight: 700;
+  }
+
+  .options {
+    display: flex;
+  }
+
+  .options-item {
+    padding: 0 1em;
+    text-transform: uppercase;
+  }
+
+  .options-link {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  .container-img-transparent, .header-menu {
+    display: none;
+  }
+
+}
